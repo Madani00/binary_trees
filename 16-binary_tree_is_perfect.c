@@ -66,9 +66,9 @@ const binary_tree_t *get_leaf(const binary_tree_t *tree)
  * Return: gsdh
  */
 
+
 int is_perfect_recursive(const binary_tree_t *tree,
 		size_t leaf_depth, size_t level)
-
 {
 
 	if (is_leaf(tree))
@@ -87,13 +87,12 @@ int is_perfect_recursive(const binary_tree_t *tree,
  * Return: ghjedt hth
  */
 
-
 int binary_tree_is_perfect(const binary_tree_t *tree)
 
 {
 
 	if (tree == NULL)
 		return (0);
-		return (is_perfect_recursive(tree, depth(get_leaf(tree)), 0));
+	return (is_perfect_recursive(tree, depth(get_leaf(tree)), 0));
 
 }
